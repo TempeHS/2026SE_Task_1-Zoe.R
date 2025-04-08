@@ -104,6 +104,8 @@ def main():
         with open("plaintext.csv", "a") as file:
             file.write(f"\n")
             file.write(f"{newuser},{newpwd}")
+            #was going to add a thing that checks to see if the user already exists
+            #but i didnt have time
         userinput = newuser
         loginscreen()
 
