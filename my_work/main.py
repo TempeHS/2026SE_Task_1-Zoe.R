@@ -101,9 +101,22 @@ def main():
         print("please input your new username and password")
         newuser = input("username: ")
         newpwd = input("password: ")
+        # with open("plaintext.csv") as file:
+        # for line in file: 
+        #         row = line.rstrip().split(",")
+        #         if row[0] == newuser:
+        #             print("sorry! this user already exists.")
+        #             registeruser()
+        #             dupeuser = yes
+        #             break
+        #         else:
+        #             dupeuser = no
         with open("plaintext.csv", "a") as file:
+            # if dupeuser == no:
             file.write(f"\n")
             file.write(f"{newuser},{newpwd}")
+            # else:
+            #     registeruser()
             #was going to add a thing that checks to see if the user already exists
             #but i didnt have time
         userinput = newuser
