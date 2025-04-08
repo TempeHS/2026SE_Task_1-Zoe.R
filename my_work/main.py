@@ -49,6 +49,8 @@ def main():
         global userinput
         global pwdinput
         print(f"Welcome, {userinput}")
+        print("> CHANGE PASSWORD")
+        print("> LOGOUT")
 
     if useraction == "login":
         userlogin()
